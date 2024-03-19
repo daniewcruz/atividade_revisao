@@ -1,0 +1,42 @@
+ 	Documentação por Daniel Lucas da Silva Cruz - 19/03/2024 
+
+	O projeto da empresa fictícia se chama “Sistema de Controle de Projetos para uma Agência de Marketing Digital”, o objetivo do sistema é permitir o controle e gestão 	de projetos, incluindo a definição de tarefas, alocação de equipes e acompanhamento do progresso.
+
+ Classes:
+
+1. Funcionário:
+   - Representa um funcionário da empresa.
+   - Atributos: matrícula, nome, CPF, data de nascimento, e-mail, endereço, telefone e gênero.
+   - Método `mostrarDados()`: Exibe os detalhes do funcionário.
+   - Usando getter e setter para obter e definir os atributos que estão protegidos e privados.
+   - Motivo: Essa classe encapsula as informações básicas de um funcionário e serve como base para outras entidades do sistema.
+
+2. Membro:
+   - Subclasse de Funcionario.
+   - Representa um membro da equipe.
+   - Atributos adicionais: lista de projetos e equipe à qual pertence.
+   - Motivo: Estende Funcionario para incluir informações específicas de um membro da equipe e permite a associação de membros a projetos e equipes.
+
+3. Tarefa:
+   - Representa uma tarefa a ser realizada em um projeto.
+   - Atributos: nome, descrição, responsável (um membro da equipe), prazo e status.
+   - Método `definirStatus(novoStatus: string)`: Atualiza o status da tarefa.
+   - Motivo: Modela uma tarefa dentro de um projeto, incluindo suas informações e métodos para gerenciar o status.
+
+4. Projeto:
+   - Representa um projeto a ser realizado pela equipe.
+   - Atributos: nome, descrição, data de início, data de término prevista e status.
+   - Métodos: `adicionarTarefa(tarefa: Tarefa)`: Adiciona uma nova tarefa ao projeto; `mostrarDados()`: Exibe os detalhes do projeto.
+   - Motivo: Define a estrutura de um projeto, incluindo métodos para adicionar tarefas e exibir informações.
+
+5. Equipe:
+   - Representa uma equipe de trabalho.
+   - Atributos: nome, líder (um membro da equipe) e membros.
+   - Motivo: Agrupa membros que trabalham juntos em projetos, facilitando a organização e colaboração.
+
+6. SistemaControleProjetos:
+   - Gerencia o sistema de controle de projetos.
+   - Atributos: lista de projetos e equipes.
+   - Métodos: registrarProjeto(projeto: Projeto): Registra um novo projeto no sistema.
+   - Motivo: Centraliza o gerenciamento de projetos e equipes, permitindo o registro de novos projetos e a realização de outras operações de controle.
+
