@@ -1,6 +1,6 @@
  	Documentação por Daniel Lucas da Silva Cruz - 19/03/2024 
 
-	O projeto da empresa fictícia se chama “Sistema de Controle de Projetos para uma Agência de Marketing Digital”, o objetivo do sistema é permitir o controle e gestão 	de projetos, incluindo a definição de tarefas, alocação de equipes e acompanhamento do progresso.
+	O projeto da empresa fictícia se chama “Sistema de Controle de Projetos para uma Agência de Marketing Digital”, o objetivo do sistema é permitir o controle e gestão de projetos, incluindo a definição de tarefas, alocação de equipes e acompanhamento do progresso.
 
  Classes:
 
