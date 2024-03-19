@@ -2,11 +2,11 @@
 class Funcionario {
     constructor(
         protected matricula: string,
-        protected nome: string,
+        public nome: string,
         private cpf: string,
         protected dataDeNascimento: Date,
         public email: string,
-        private endereco: string[],
+        protected endereco: string[],
         public telefone: string,
         private genero?: string,
     ) { }
